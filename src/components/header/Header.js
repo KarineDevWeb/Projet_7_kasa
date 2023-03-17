@@ -2,7 +2,7 @@ import "./Header.scss";
 import Logo from '../../assets/logo.jpg'
 import Navbar from '../navbar/Navbar'
 
-export default function Header() {
+function Header() {
     return (
     <header className='header'>
         <h1>
@@ -12,3 +12,5 @@ export default function Header() {
     </header>
     )
 }
+
+export default Header;
