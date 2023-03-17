@@ -11,7 +11,7 @@ function Collapse({title, content}) {
         <div className='collapse'>
             <h3 className='collapse_title' onClick={() => setToggle(!toogle)}>
                 {title}
-                <img className={toogle ? 'chevron chevron-up' : 'chevron chevron_down'}
+                <img className={toogle ? 'chevron chevron_up' : 'chevron chevron_down'}
                 src={chevron}
                 alt="show content"/>
             </h3>
