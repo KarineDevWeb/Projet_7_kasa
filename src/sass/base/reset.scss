@@ -1,0 +1,26 @@
+*, ::before, ::after {
+    font-family: 'roboto';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: normal;
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    max-width: 1440px;
+    padding-top: 40px;
+    margin: 0 auto;
+    @media screen and (max-width: 500px) {
+        padding-top: 20px;
+    }
+}
