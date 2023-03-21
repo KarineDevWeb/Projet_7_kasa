@@ -11,22 +11,23 @@
     padding: 20px;
     max-width: 92%;
     margin: 40px auto;
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 375px) {
         margin: 20px auto;
         height: 120px;
     }
     &_about {
         position: relative;
         @include flex;
-        height: 224px;
-        max-width: 92%;
         border-radius: 25px;
-        margin: 40px auto;
         background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../../assets/about_cover1.jpg');
         background-position: center;
         background-size: cover;
-        @media screen and (max-width: 500px){
+        height: 220px;
+        max-width: 92%;
+        margin: 40px auto;
+        @media screen and (max-width: 375px) {
             margin: 20px auto;
+            heigth: 120px;
         }
     }
     h1 {
@@ -34,5 +35,8 @@
         font-size: 50px;
         font-weight: 500;
         letter-spacing: 3px;
+        @media screen and (max-width: 375px) {
+            font-size: 30px;
+        }
     }
 }
