@@ -4,7 +4,7 @@
  import data from '../../database/database'
  import Header from '../../components/header/Header';
  import Collapse from '../../components/collapse/Collapse';
- import Slider from '../../components/carrousel/Carrousel';
+ import Slide from '../../components/carrousel/Carrousel'
  import Footer from '../../components/footer/Footer';
  import redStar from '../../assets/red_star2.png';
  import greyStar from '../../assets/grey_star2.png';
@@ -14,13 +14,13 @@
  
 function Accommodation() {
 
-    const [imageSlider, setImageSlider] = useState([]);
+    const [imageSlide, setImageSlide] = useState([]);
     const idAccommodation = useParams('id').id;
     const dataCurrentAccommodation = data.filter(database => database.id === idAccommodation);
 
     useEffect(() => {
         const dataCurrentAccommodation = data.filter(database => database.id === idAccommodation);
-		setImageSlider(dataCurrentAccommodation[0].pictures);
+		setImageSlide(dataCurrentAccommodation[0].pictures);
 	}, [idAccommodation]);
 
 	const name = dataCurrentAccommodation[0].host.name.split(' '); 
@@ -32,7 +32,7 @@ function Accommodation() {
     return (
         <>
                 <Header/>
-                <Slider imageSlider={imageSlider}/>
+                <Slide imageSlide={imageSlide}/>
                 <main className="accommodation">
                     <div className="accommodation_content">
                         <div className="accommodation_content_infos">
