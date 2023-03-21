@@ -3,10 +3,11 @@
 .header {
     @include flex(row, space-between, center);
     height: 68px;
-    max-width: 92%;
-    margin: 0 auto;
+    max-width: 95%;
+    // margin: 10 auto;
+    
     @media screen and (max-width: 900px){
-        height: 45px;
+        height: 50px;
     }
     img {
         height: 80px;
