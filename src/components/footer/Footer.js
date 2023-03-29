@@ -9,12 +9,4 @@ export default function Footer() {
     </footer>
      )
  }
-/* <footer className={footerClass.footerSticky}>
-    <div className={footerClass.footerFlex}>
-        <img draggale="false" src={logo} alt="Logo Kasa" className={footerClass.footerFlex_img}/>
-        <p className={footerClass.footerFlex_paragraph}>
-        © 2020 Kasa. All rights reserved 
-        </p>
-    </div>
-</footer>
-    ); */
+ 
