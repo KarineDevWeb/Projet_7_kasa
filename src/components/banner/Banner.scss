@@ -18,25 +18,45 @@
     &_about {
         position: relative;
         @include flex;
-        border-radius: 25px;
+        border-radius: 10px;
         background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../../assets/about_cover1.jpg');
         background-position: center;
         background-size: cover;
         height: 220px;
         max-width: 92%;
         margin: 40px auto;
-        @media screen and (max-width: 375px) {
+        @media screen and (max-width: 550px) {
             margin: 20px auto;
-            heigth: 120px;
+            height: 230px;
         }
+        // @media screen and (max-width: 768px) {
+        //     margin: 5px;
+        //     height: 200px;
+        // }
     }
     h1 {
-        color: $color-primary;
-        font-size: 50px;
+        position: relative;
+        align-items: center;
+        font-style: normal;
         font-weight: 500;
+        font-size: 48px;
+        color: $color-primary;
+        line-height: 48px;
         letter-spacing: 3px;
-        @media screen and (max-width: 375px) {
-            font-size: 30px;
+        display: flex;
+        
+        
+        
+        
+
+        @media screen and (max-width: $breakpoint-desktop) {
+            // font-size: 30px;
+            // letter-spacing: 2px;
+            position: absolute;
+            font-size: 20px;
+            line-height: 100%;
+            width: 240px;
+            left: 5.6%;   
         }
     }
 }
