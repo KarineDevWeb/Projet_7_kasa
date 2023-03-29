@@ -5,21 +5,49 @@
     margin: 0 auto;
     padding-bottom: 40px;
     color: $color-secondary;
+    @media screen and (max-width: 375px) {
+        max-height: 812px;
+    }
     &_infos{
-        @include flex(column, center, center);
-        min-height: calc(100vh - 250px);
-        color: $color-secondary;
+        display: flex;
+        flex-direction: column;
+        color: $color-secondary;  
         &_title{
+            margin-top:186px;
+            margin-left: 432px;
             font-weight: 700;
             font-size: 288px;
             @media screen and (max-width: 768px) {
-                font-size: 140px;
+                font-size: 150px;
+                margin-top: 207px;
+                margin-left: 220px;
+                 margin-right: 230px;     
+            }
+            @media screen and (max-width: 375px) {
+                font-size: 90px;
+                margin-top: 207px;
+                margin-left: 95px;
             }
         }
         &_content{
             font-weight: 500;
-            font-size: clamp(20px, 4vw, 36px);
             text-align: center;
+            font-size: 34px;
+            line-height: 51.34px;
+            margin-left: 295px;
+            margin-right: 273px;
+            @media screen and (max-width: 768px) {
+                margin-left: 20px;
+                margin-right: 20px;
+                font-size: 20px;
+            }
+            @media screen and (max-width: 375px) {
+                font-size: 18px;
+                margin-left: 57px;
+                margin-right: 58px;
+                line-height: 25.67px;
+                margin-bottom: 66.5px;
+            }
         }
         &_return{
             color: $color-secondary;
@@ -27,7 +55,22 @@
             display: block;
             text-align: center;
             font-weight: 500;
-            font-size: clamp(12px, 2.5vw, 18px);
+            font-size: 17px;
+            line-height: 25.67px;
+            margin-left: 578px;
+            margin-right: 578px;
+            margin-bottom: 159px;
+            @media screen and (max-width: 768px) {
+                margin-left: 60px;
+                margin-right: 60px;
+            }
+            @media screen and (max-width: 375px) {
+                font-size: 14px;
+                line-height: 19.96px;
+                padding-top: 66.5px;
+                margin-bottom: 255px;
+                
+            }
         }
     }
 }
