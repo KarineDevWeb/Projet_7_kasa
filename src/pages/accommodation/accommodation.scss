@@ -1,6 +1,7 @@
 @import '../../sass/main.scss';
 
 .accommodation{
+    margin-top: 10px;
     &_content{
         @include flex(row, space-between, flex-star);
         color: $color-secondary;
@@ -32,8 +33,7 @@
             div{
                 display: flex;
                 flex-wrap: wrap;
-                gap: 10px;
-                
+                gap: 10px;  
             }
         }
         &_host{
@@ -66,8 +66,7 @@
             }
             &_stars{
                 display: flex;
-                gap: 10px;
-                
+                gap: 10px;              
                 img {
                     width: 30px;
                     height: 30px;
