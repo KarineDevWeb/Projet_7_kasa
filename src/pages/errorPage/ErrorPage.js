@@ -10,7 +10,7 @@ function ErrorPage() {
                 <h1 className='errorPage_infos_title'>404</h1>
                 <p className='errorPage_infos_content'>Oups! La page que vous demandez n'existe pas.</p>
             </div>
-                <Link className='errorPage_infos_return' to='/kasa/'>Retourner sur la page d'accueil</Link>     
+                <Link className='errorPage_infos_return' to='/'>Retourner sur la page d'accueil</Link>     
         </div>
     )
 }
