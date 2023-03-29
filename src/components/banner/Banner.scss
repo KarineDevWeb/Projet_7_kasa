@@ -29,10 +29,6 @@
             margin: 20px auto;
             height: 230px;
         }
-        // @media screen and (max-width: 768px) {
-        //     margin: 5px;
-        //     height: 200px;
-        // }
     }
     h1 {
         position: relative;
@@ -44,14 +40,7 @@
         line-height: 48px;
         letter-spacing: 3px;
         display: flex;
-        
-        
-        
-        
-
         @media screen and (max-width: $breakpoint-desktop) {
-            // font-size: 30px;
-            // letter-spacing: 2px;
             position: absolute;
             font-size: 20px;
             line-height: 100%;
