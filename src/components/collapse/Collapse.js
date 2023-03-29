@@ -16,9 +16,9 @@ function Collapse({title, content}) {
                 alt="show content"/>
             </h3>
             <div className={toogle ? 'collapse_content' : 'collapse_content_hidden'}>
-                {Array.isArray(content) ? content.map((item, index) => {
+                {Array.isArray(content) ? content.map((article, index) => {
                     return (
-                        <p key={index}>{item}</p>
+                        <p key={index}>{article}</p>
                     )
                 }) : content
             }
