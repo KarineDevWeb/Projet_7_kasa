@@ -1,12 +1,13 @@
-*, ::before, ::after {
-    font-family: 'roboto';
+ *, ::before, ::after {
+    box-sizing: border-box;
+    font-family: 'montserrat';
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-style: normal;
-    font-style: normal;
-}
 
+}
+// couleur texte et texte souligné (accueil et à propos)
 a{
     text-decoration: none;
     color: inherit;
@@ -18,9 +19,29 @@ li{
 
 body{
     max-width: 1440px;
+    max-height: 1300px;
     padding-top: 40px;
     margin: 0 auto;
     @media screen and (max-width: 500px) {
-        padding-top: 20px;
-    }
+    padding-top: 20px;
+ }
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+html,
+body,
+#root {
+    height: 100%;
+}
+
+main {
+    
+    margin: auto;
+    padding-top: 1px;
+    
 }
