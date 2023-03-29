@@ -31,6 +31,7 @@ function About() {
     return (
         <div>
             <Header />
+            <div className='about_main_flex'>
             <Banner />
             <main className='about_main'>
                 {aboutData.map(database => {
@@ -41,6 +42,7 @@ function About() {
                     )}
                 )}
             </main>
+            </div>
             <Footer />
         </div>
     )
