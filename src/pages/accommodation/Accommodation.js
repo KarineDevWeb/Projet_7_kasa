@@ -6,12 +6,10 @@
  import Collapse from '../../components/collapse/Collapse';
  import Slide from '../../components/carrousel/Carrousel'
  import Footer from '../../components/footer/Footer';
- import redStar from '../../assets/red_star2.png';
- import greyStar from '../../assets/grey_star2.png';
+ import redStar from '../../assets/red_star.png';
+ import greyStar from '../../assets/grey_star.png';
 
 
- 
- 
 function Accommodation() {
 
     const [imageSlide, setImageSlide] = useState([]);
@@ -28,7 +26,6 @@ function Accommodation() {
 	const description  = dataCurrentAccommodation[0].description;
 	const equipments = dataCurrentAccommodation[0].equipments;
     
-
     return (
         <>
                 <Header/>
