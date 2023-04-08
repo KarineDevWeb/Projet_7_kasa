@@ -8,23 +8,32 @@
  import Footer from '../../components/footer/Footer';
  import redStar from '../../assets/red_star.png';
  import greyStar from '../../assets/grey_star.png';
+ import ErrorPage from '../errorPage/ErrorPage';
 
 
 function Accommodation() {
 
     const [imageSlide, setImageSlide] = useState([]);
-    const idAccommodation = useParams('id').id;
-    const dataCurrentAccommodation = data.filter(database => database.id === idAccommodation);
 
-    useEffect(() => {
-        const dataCurrentAccommodation = data.filter(database => database.id === idAccommodation);
-		setImageSlide(dataCurrentAccommodation[0].pictures);
-	}, [idAccommodation]);
+    const { id } = useParams();
+    const dataCurrentAccommodation = data.find(database => database.id === id);
+     
+      useEffect(() => {
+    
+        if (dataCurrentAccommodation && dataCurrentAccommodation.pictures) {
+            setImageSlide(dataCurrentAccommodation.pictures);
+        }
+      
+	  }, [dataCurrentAccommodation]);
 
-	const name = dataCurrentAccommodation[0].host.name.split(' '); 
-	const rating = dataCurrentAccommodation[0].rating;
-	const description  = dataCurrentAccommodation[0].description;
-	const equipments = dataCurrentAccommodation[0].equipments;
+      if (!dataCurrentAccommodation) {
+        return <ErrorPage />;
+      }
+   
+	  const name = dataCurrentAccommodation.host.name.split(' '); 
+	  const rating = dataCurrentAccommodation.rating;
+	  const description  = dataCurrentAccommodation.description;
+	  const equipments = dataCurrentAccommodation.equipments;
     
     return (
         <>
@@ -33,9 +42,9 @@ function Accommodation() {
                 <main className="accommodation">
                     <div className="accommodation_content">
                         <div className="accommodation_content_infos">
-                            <h1>{dataCurrentAccommodation[0].title}</h1>
-                            <p>{dataCurrentAccommodation[0].location}</p> 
-                            <div>{dataCurrentAccommodation[0].tags.map((tag, index) => {
+                            <h2>{dataCurrentAccommodation.title}</h2>
+                            <p>{dataCurrentAccommodation.location}</p> 
+                            <div>{dataCurrentAccommodation.tags.map((tag, index) => {
                                 return (
                                     <button key={index}>{tag}</button>
                                 )
@@ -48,7 +57,7 @@ function Accommodation() {
                                 <span>{name[0]}</span>
                                 <span>{name[1]}</span>
                             </div>
-                            <img src={dataCurrentAccommodation[0].host.picture} alt="host of this accommodation"/>
+                            <img src={dataCurrentAccommodation.host.picture} alt="host of this accommodation" />
                         </div> 
                         <div className="accommodation_content_host_stars">
 							{[...Array(5)].map((star, index) => {
