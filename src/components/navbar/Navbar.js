@@ -2,7 +2,7 @@ import './navbar.scss'
 import { Link } from 'react-router-dom';
 
 export default function Navbar() {
-
+// renvoie le chemin et le nom de fichier de la page en cours
     const currentRoute = window.location.pathname;
 
 // Ajout d'accueil et à propos dans la barre de navigation
