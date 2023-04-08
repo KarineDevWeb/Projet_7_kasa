@@ -19,29 +19,15 @@ li{
 
 body{
     max-width: 1440px;
-    max-height: 1300px;
     padding-top: 40px;
     margin: 0 auto;
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 375px) {
     padding-top: 20px;
- }
+    }
 }
 
 #root {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-}
-
-html,
-body,
-#root {
-    height: 100%;
-}
-
-main {
-    
-    margin: auto;
-    padding-top: 1px;
-    
 }
