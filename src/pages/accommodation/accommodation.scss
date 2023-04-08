@@ -1,13 +1,13 @@
 @import '../../sass/main.scss';
 
 .accommodation{
-    margin-top: 10px;
     &_content{
-        @include flex(row, space-between, flex-star);
+        @include flex(row, space-between, flex-start);
         color: $color-secondary;
-        width: 95%;
+        width: 90%;
+        max-width: 1240px;
         margin: 0 auto;
-        @media screen and (max-width: 650px){
+        @media screen and (max-width: 650px) {
             @include flex(column, space-between, flex-start);
             gap: 10px;
         }
@@ -17,6 +17,26 @@
             gap: 10px;
             font-weight: 500;
             font-size: 14px;
+            h2 {   
+                max-width: 635px;
+                font-size: 36px;
+                font-weight: 500;
+                line-height: 51.34px;
+                @media screen and (max-width: 375px) {
+                    max-width: 335px;
+                    font-size: 18px;
+                    line-height: 25.67px;
+                }
+            }
+            p {
+                size: 18px;
+                line-height: 25.67px;
+                font-weight: 500;
+                @media screen and (max-width: 375px) {
+                    size: 14px;
+                    line-height: 19.96px;
+                }
+            }
             button{
                 display: inline;
                 padding: 5px 15px;
@@ -56,6 +76,9 @@
             &_name{
                 align-self: center;
                 flex-direction: column;
+                @media screen and (max-width: 375px) {
+                    font-size: 12px;
+                }
             }
             img{
                 width: 60px;
@@ -63,6 +86,10 @@
                 object-fit: cover;
                 object-position: center;
                 border-radius: 50%;
+                @media screen and (max-width: 375px) {
+                    width: 30px;
+                    height: 30px;   
+                }
             }
             &_stars{
                 display: flex;
@@ -73,6 +100,10 @@
                     @media screen and (max-width: 650px){
                         width: 20px;
                         height: 20px;
+                    }
+                    @media screen and (max-width: 375px){
+                        width: 13.41px;
+                        height: 13px;
                     }
                 }
             }
