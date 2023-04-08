@@ -1,11 +1,13 @@
 import './collapse.scss'
 import chevron from '../../assets/chevron.jpg';
-import { useState } from 'react';
-
+import { useState } from 'react'; 
+// ici, useState gére l'état de rétractation de "toogle"
+// la fonction "collapse" affiche le titre et le contenu du composant
 function Collapse({title, content}) {
 
     const [toogle, setToggle] = useState(false);
-
+// le titre est affiché dans la balise h3 avec un onclick qui appelle la fonction 
+// setToogle lorsque l'on clique. La fonction setToogle modifie la valeur de l'état "toogle" (rétractation)
     return (
         <>
         <div className='collapse'>
