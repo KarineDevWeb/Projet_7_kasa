@@ -2,21 +2,19 @@
 .about_main_flex {
     width: 100%;
     margin: 0 auto;
-    padding: 0 50px;
     @media screen and (max-width: 375px) {
         padding: 0 10px;
     }
 
-
 .about_main {
-    width: 95%;
-    margin-bottom: 320px;
+    width: 90%;
+    margin: auto auto 320px auto;
     @media screen and (max-width: 375px) {
-        margin-bottom: 500px;
+        margin: auto auto 500px auto;
     }
-    &_collapse{
+    &_collapse {
         margin: 40px auto;    
-         @media screen and (max-width: 375px){
+         @media screen and (max-width: 375px) {
              margin: 20px auto;
          }
     }
