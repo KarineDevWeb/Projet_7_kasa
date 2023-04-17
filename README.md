@@ -4,7 +4,7 @@ Kasa est dans le métier de la location d'appartements entre particuliers depuis
 
 Kasa m'a recrutée en tant que développeur front-end en freelance pour développer sa nouvelle plateforme web.
 
-![](assets/kasa%20location.jpg)
+![](src/assets/kasa%20location.jpg)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
